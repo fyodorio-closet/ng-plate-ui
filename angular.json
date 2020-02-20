@@ -1,6 +1,6 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
-  "version": 1, 
+  "version": 1,
   "newProjectRoot": "projects",
   "projects": {
     "ng-plate-ui": {
@@ -12,7 +12,7 @@
       },
       "root": "",
       "sourceRoot": "src",
-      "prefix": "app",
+      "prefix": "plate",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
@@ -66,7 +66,8 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "ng-plate-ui:build"
+            "browserTarget": "ng-plate-ui:build",
+            "port": 1717
           },
           "configurations": {
             "production": {
