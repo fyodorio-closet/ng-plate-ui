@@ -1,4 +1,5 @@
-# NgPlateUi
+# ng-plate-ui
+I just test-drive new Angular UI components here
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.0.3.
 
