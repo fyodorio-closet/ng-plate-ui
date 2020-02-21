@@ -1,9 +1,9 @@
 <button
-    [attr.aria-label]="ariaLabel"
-    [attr.disabled]="isDisabled"
-    [attr.name]="buttonName"
-    [attr.type]="buttonType"
-    [ngStyle]="disableOutline && {'outline': 'none'}"
+    [attr.aria-label]="buttonConfig.ariaLabel"
+    [attr.disabled]="buttonConfig.isDisabled"
+    [attr.name]="buttonConfig.buttonName"
+    [attr.type]="buttonConfig.buttonType"
+    [ngStyle]="buttonConfig.disableOutline && {'outline': 'none'}"
     (click)="onCLick($event)">
     <ng-content></ng-content>
 </button>

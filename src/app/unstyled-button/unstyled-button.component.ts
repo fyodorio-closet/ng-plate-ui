@@ -1,16 +1,14 @@
 import { Component, EventEmitter, Input, Output } from '@angular/core';
 
+import { ButtonConfig } from './unstyled-button-config.model';
+
 @Component({
     selector: 'plate-unstyled-button',
     templateUrl: './unstyled-button.component.html',
     styleUrls: ['./unstyled-button.component.scss']
 })
 export class UnstyledButtonComponent {
-    @Input() ariaLabel: string;
-    @Input() buttonName: string;
-    @Input() buttonType: 'submit' | 'reset' | 'button' = 'button';
-    @Input() isDisabled: boolean;
-    @Input() disableOutline: boolean;
+    @Input() buttonConfig: ButtonConfig;
     @Output() clickButton: EventEmitter<Event> = new EventEmitter();
 
     onCLick($event: Event) {
