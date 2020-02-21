@@ -6,15 +6,9 @@ import { AppComponent } from './app.component';
 import { UnstyledButtonComponent } from './unstyled-button/unstyled-button.component';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    UnstyledButtonComponent
-  ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
-  ],
-  providers: [],
-  bootstrap: [AppComponent]
+    declarations: [AppComponent, UnstyledButtonComponent],
+    imports: [BrowserModule, AppRoutingModule],
+    providers: [],
+    bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {}

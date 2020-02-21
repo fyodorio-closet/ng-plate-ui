@@ -1,25 +1,26 @@
 // reset button styles
 button {
-  background: none;
-  border: 0;
-  color: inherit;
-  font: inherit;
-  line-height: normal;
-  overflow: visible;
-  padding: 0;
-  -webkit-user-select: none; /* for button */
-  -moz-user-select: none;
-  -ms-user-select: none;
+    background: none;
+    border: 0;
+    color: inherit;
+    font: inherit;
+    line-height: normal;
+    overflow: visible;
+    padding: 0;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    &::-moz-focus-inner {
+        border: 0;
+        padding: 0;
+    }
 }
-button::-moz-focus-inner {
-  border: 0;
-  padding: 0;
-}
-// inherit parent styles
+
+// inherit selected styles from host component
 button {
-  width: inherit;
-  height: inherit;
-  color: inherit;
-  background-color: inherit;
-  border-radius: 1em;
+    width: inherit;
+    height: inherit;
+    background-color: inherit;
+    border-radius: inherit;
+    border: inherit;
 }

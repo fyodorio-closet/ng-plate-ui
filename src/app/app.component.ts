@@ -1,14 +1,14 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'plate-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
+    selector: 'plate-root',
+    templateUrl: './app.component.html',
+    styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'ng-plate-ui';
+    title = 'ng-plate-ui';
 
-  clickButton($event: Event) {
-    console.log($event);
-  }
+    clickButton($event: Event) {
+        console.log($event);
+    }
 }
