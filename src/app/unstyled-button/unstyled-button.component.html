@@ -1,1 +1,3 @@
-<button [attr.aria-label]="ariaLabel" (click)="onCLick($event)">{{ textLabel }}</button>
+<button [attr.aria-label]="ariaLabel" (click)="onCLick($event)">
+  <ng-content></ng-content>
+</button>

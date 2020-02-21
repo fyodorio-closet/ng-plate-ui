@@ -6,7 +6,6 @@ import {Component, EventEmitter, Input, Output} from '@angular/core';
   styleUrls: ['./unstyled-button.component.scss']
 })
 export class UnstyledButtonComponent {
-  @Input() textLabel: string;
   @Input() ariaLabel: string;
   @Output() clickButton: EventEmitter<Event> = new EventEmitter();
 
