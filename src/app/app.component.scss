@@ -1,10 +1,14 @@
 .plate-root {
     width: 100%;
+    display: flex;
+    flex-direction: column;
     plate-unstyled-button {
         width: 50%;
         height: 4em;
-        background-color: blue;
-        color: white;
-        border-radius: 1em;
+        &.text-button {
+            background-color: blue;
+            color: white;
+            border-radius: 1em;
+        }
     }
 }

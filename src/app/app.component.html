@@ -1,4 +1,7 @@
 <div class="plate-root">
     <h1>My Awesome UI Library</h1>
-    <plate-unstyled-button ariaLabel="Test" (clickButton)="clickButton($event)">Test Button</plate-unstyled-button>
+    <plate-unstyled-button class="text-button" ariaLabel="Test" (clickButton)="clickButton($event)">Test Button</plate-unstyled-button>
+    <plate-unstyled-button class="disabled" [isDisabled]="true">Disabled</plate-unstyled-button>
+    <plate-unstyled-button [disableOutline]="true">Test Button</plate-unstyled-button>
+    <plate-unstyled-button><img src="https://img.icons8.com/material-sharp/24/000000/vector.png" /></plate-unstyled-button>
 </div>

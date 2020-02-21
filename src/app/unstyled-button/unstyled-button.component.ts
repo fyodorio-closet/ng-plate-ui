@@ -7,6 +7,10 @@ import { Component, EventEmitter, Input, Output } from '@angular/core';
 })
 export class UnstyledButtonComponent {
     @Input() ariaLabel: string;
+    @Input() buttonName: string;
+    @Input() buttonType: 'submit' | 'reset' | 'button' = 'button';
+    @Input() isDisabled: boolean;
+    @Input() disableOutline: boolean;
     @Output() clickButton: EventEmitter<Event> = new EventEmitter();
 
     onCLick($event: Event) {
